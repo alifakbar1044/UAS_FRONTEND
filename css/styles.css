@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sign-in, .sign-up {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sign-in {
+    background-color: white;
+}
+
+.sign-up {
+    background-color: #000000;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    border: none;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    background-color: #bbb;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+.social-login i {
+    font-size: 2rem; /* Atur ukuran sesuai kebutuhan */
+    margin: 0 10px;  /* Memberikan jarak antar ikon */
+    color: #333;     /* Atur warna jika perlu */
+    cursor: pointer; /* Tambahkan efek pointer saat hover */
+}
+
+.social-login i:hover {
+    color: #000000; /* Atur warna saat di-hover */
+}
+
