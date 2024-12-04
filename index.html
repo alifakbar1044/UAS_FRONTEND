@@ -22,11 +22,10 @@
 </head>
 
 <body>
-    <!-- Login Check -->
+    
     <script>
         const isLoggedIn = localStorage.getItem('isLoggedIn');
         if (!isLoggedIn) {
-            // Redirect to login page if not logged in
             window.location.href = 'loginpage.html';
         }
     </script>
@@ -103,9 +102,9 @@
     <!-- Logout Script -->
     <script>
         function logout() {
-            localStorage.removeItem('isLoggedIn'); // Clear login status
+            localStorage.removeItem('isLoggedIn'); 
             alert('Anda telah logout.');
-            window.location.href = 'loginpage.html'; // Redirect to login page
+            window.location.href = 'loginpage.html'; 
         }
     </script>
 </body>
