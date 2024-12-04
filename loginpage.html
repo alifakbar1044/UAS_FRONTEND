@@ -18,8 +18,8 @@
             </div>
             <p>atau gunakan akun anda</p>
             <form id="login-form">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
                 <a href="#">Lupa kata sandi anda?</a>
                 <button type="submit" class="btn">SIGN IN</button>
             </form>
@@ -30,6 +30,23 @@
             <button class="btn">SIGN UP</button>
         </div>
     </div>
-    <script src="/js/script.js"></script>
+    <script>
+        // Login validation
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Dummy validation
+            if (email === "user@example.com" && password === "password") {
+                // Save login status
+                localStorage.setItem('isLoggedIn', 'true');
+                alert('Login Berhasil!');
+                window.location.href = 'index.html'; // Redirect to main page
+            } else {
+                alert('Email atau password salah!');
+            }
+        });
+    </script>
 </body>
 </html>

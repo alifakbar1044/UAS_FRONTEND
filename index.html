@@ -5,304 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>redwood</title>
-    <!-- google font -->
+    <title>Redwood</title>
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- boxicons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- app css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/app.css">
-    <!--angular js-->
+    <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- App JS -->
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-        
-        </div>        
-        <!-- end mobile menu -->
-        <!-- main header -->
-        <div class="header-wrapper" id="header-wrapper">
-            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-                <i class='bx bx-x'></i>
-            </span>
-            <!-- top header -->
-            <!-- end top header -->
-            <!-- mid header -->
-            <div class="bg-main">
-                <div class="mid-header container">
-                    <a href="#" class="logo">
-                        <img src="images/redwood.png" alt="Redwood Logo">
-                    </a>
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <i class='bx bx-search-alt'></i>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- end mid header -->
-            <!-- bottom header -->
-            <div class="bg-second">
-                <div class="bottom-header container">
-                    <ul class="main-menu">
-                        <li><a href="#">home</a></li>
-                        <!-- mega menu -->
-                        <li class="mega-dropdown">
-                            <a href="./products.html">Shop<i class='bx bxs-chevron-down'></i></a>
-                            <div class="mega-content">
-                                <div class="row">
-                                    <div class="col-3 col-md-12">
-                                        <div class="box">
-                                            <h3>Categories</h3>
-                                            <ul>
-                                                <li><a href="#">Wireless</a></li>
-                                                <li><a href="#">Inear headphone</a></li>
-                                                <li><a href="#">Overear headphone</a></li>
-                                                <li><a href="#">sport headphone</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-md-12">
-                                        <div class="box">
-                                            <h3>Categories</h3>
-                                            <ul>
-                                                <li><a href="#">Wireless</a></li>
-                                                <li><a href="#">Inear headphone</a></li>
-                                                <li><a href="#">Overear headphone</a></li>
-                                                <li><a href="#">sport headphone</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-md-12">
-                                        <div class="box">
-                                            <h3>Categories</h3>
-                                            <ul>
-                                                <li><a href="#">Wireless</a></li>
-                                                <li><a href="#">Inear headphone</a></li>
-                                                <li><a href="#">Overear headphone</a></li>
-                                                <li><a href="#">sport headphone</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-md-12">
-                                        <div class="box">
-                                            <h3>Categories</h3>
-                                            <ul>
-                                                <li><a href="#">Wireless</a></li>
-                                                <li><a href="#">Inear headphone</a></li>
-                                                <li><a href="#">Overear headphone</a></li>
-                                                <li><a href="#">sport headphone</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row img-row">
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- end mega menu -->
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end bottom header -->
-        </div>
-        <!-- end main header -->
-    </header>
-    <!-- end header -->
+    <!-- Login Check -->
+    <script>
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (!isLoggedIn) {
+            // Redirect to login page if not logged in
+            window.location.href = 'loginpage.html';
+        }
+    </script>
 
-    <!-- hero section -->
+    <!-- Header -->
+    <div class="header-wrapper" id="header-wrapper">
+        <div class="bg-main">
+            <div class="mid-header container">
+                <a href="#" class="logo">
+                    <img src="images/redwood.png" alt="Redwood Logo">
+                </a>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <button onclick="logout()" class="btn-flat btn-hover">Logout</button>
+            </div>
+        </div>
+        <div class="bg-second">
+            <div class="bottom-header container">
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="mega-dropdown">
+                        <a href="./products.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                        <!-- Mega menu content -->
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
     <div class="hero">
+        <!-- Hero Content -->
         <div class="slider">
             <div class="container">
-                <!-- slide item -->
-                <div class="slide active">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                1AFXVN
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                LV X Park Seo 
-                            </h2>
-                            <p class="top-down trans-delay-0-4">
-                                "LV X Park Seo Bo Cotton Short-Sleeved", yang kemungkinan besar merupakan produk kolaborasi antara Louis Vuitton (LV) dan Park Seo Bo, seorang seniman terkenal asal Korea Selatan. Kolaborasi antara brand fashion mewah dan seniman terkenal ini sering kali menghasilkan desain unik yang menggabungkan elemen seni dan mode.
-                            </p>
-                            <div class="top-down trans-delay-0-6">
-                                <a href="products.html">
-                                    <button class="btn-flat btn-hover">
-                                        <span>Shop Now</span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img top-down">
-                        <img src="./images/baju11.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
-                <!-- slide item -->
-                <div class="slide">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                1AG080
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                Sleeved Embroidered 
-                            </h2>
-                            <p class="top-down trans-delay-0-4">
-                                Kaos biru elektrik pintar ini dari koleksi kapsul Louis Vuitton 37th America's Cup menghadirkan estetika sporty untuk tampilan sehari-hari. Bahan katun halusnya dihiasi dengan bordir tanda tangan Gaston tiga warna di atas motif garis cetak yang memanjang di bagian dada kiri. Pakaian yang simpel ini mudah dipadukan dengan celana pendek dan chino.
-                            </p>
-                            <div class="top-down trans-delay-0-6">
-                                <a href="products.html">
-                                    <button class="btn-flat btn-hover">
-                                        <span>Shop Now</span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img right-left">
-                        <img src="./images/baju5.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
-                <!-- slide item -->
-                <div class="slide">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                1AGJZ7
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                Signature Patch Cotton
-                            </h2>
-                            <p class="top-down trans-delay-0-4">
-                                Louis Vuitton sering merilis koleksi pakaian atau aksesori dengan bahan premium, dan "Signature Patch Cotton" mungkin merujuk pada produk berbahan katun berkualitas tinggi dengan desain tambalan atau pola khas LV.
-                            </p>
-                            <div class="top-down trans-delay-0-6">
-                                <a href="products.html">
-                                    <button class="btn-flat btn-hover">
-                                        <span>Shop Now</span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img left-right">
-                        <img src="./images/baju4.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
+                <!-- Add Slide Content Here -->
             </div>
-            <!-- slider controller -->
-            <button class="slide-controll slide-next">
-                <i class='bx bxs-chevron-right'></i>
-            </button>
-            <button class="slide-controll slide-prev">
-                <i class='bx bxs-chevron-left'></i>
-            </button>
-            <!-- end slider controller -->
-        </div>
-    </div>    
-    <!-- end promotion section -->
-
-    <!-- product list -->
-    <!-- end product list -->
-
-    <!-- special product -->
-    <div class="bg-second">
-        <div class="section container">
-            <div class="row">
-                <div class="col-4 col-md-4">
-                    <div class="sp-item-img">
-                        <img src="./images/baju1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-7 col-md-8">
-                    <div class="sp-item-info">
-                        <div class="sp-item-name">Workwear Cotton Canvas Blouson</div>
-                        <p class="sp-item-description">
-                            Workwear Cotton Canvas Blouson Mengacu pada pola atau permukaan kain yang memiliki detail visual dan sentuhan yang khas, seperti pola timbul, garis, atau motif tertentu. Ini memberikan kesan unik dan mewah.
-                        </p>
-                        <a href="products.html">
-                            <button class="btn-flat btn-hover">Shop Now</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>    
-            </div>
+            <button class="slide-controll slide-next"><i class='bx bxs-chevron-right'></i></button>
+            <button class="slide-controll slide-prev"><i class='bx bxs-chevron-left'></i></button>
         </div>
     </div>
 
-    <!-- blogs -->
-    <div class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>latest blog</h2>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="./images/JBL_Quantum400_Lifestyle1.png" alt="">
-                </div>
-                <div class="blog-info">
-                    <div class="blog-title">
-                        Lorem ipsum dolor sit amet
-                    </div>
-                    <div class="blog-preview">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.
-                    </div>
-                    <button class="btn-flat btn-hover">read more</button>
-                </div>
-            </div>
-            <div class="blog row-revere">
-                <div class="blog-img">
-                    <img src="./images/JBL_TUNE220TWS_Lifestyle_black.png" alt="">
-                </div>
-                <div class="blog-info">
-                    <div class="blog-title">
-                        Lorem ipsum dolor sit amet
-                    </div>
-                    <div class="blog-preview">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.
-                    </div>
-                    <button class="btn-flat btn-hover">read more</button>
-                </div>
-            </div>
-            <div class="section-footer">
-                <a href="#" class="btn-flat btn-hover">view all</a>
-            </div>
-        </div>
-    </div>
-    <!-- end blogs -->
-
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="bg-second">
         <div class="container">
             <div class="row">
@@ -311,64 +81,33 @@
                     <ul class="menu">
                         <li><a href="#">Help center</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
+                        <li><a href="#">Product help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order status</a></li>
                     </ul>
                 </div>
                 <div class="col-3 col-md-6">
-                    <h3 class="footer-head">services</h3>
+                    <h3 class="footer-head">Support</h3>
                     <ul class="menu">
                         <li><a href="#">Help center</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
+                        <li><a href="#">Product help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order status</a></li>
                     </ul>
-                </div>
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">support</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="contact">
-                        <h3 class="contact-header">
-                            redwood
-                        </h3>
-                        <ul class="contact-socials">
-                            <li><a href="#">
-                                    <i class='bx bxl-facebook-circle'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-instagram-alt'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-youtube'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-twitter'></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="subscribe">
-                        <input type="email" placeholder="ENTER YOUR EMAIL">
-                        <button>subscribe</button>
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- end footer -->
 
-    <!-- app js -->
-    <script src="./js/app.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- Logout Script -->
+    <script>
+        function logout() {
+            localStorage.removeItem('isLoggedIn'); // Clear login status
+            alert('Anda telah logout.');
+            window.location.href = 'loginpage.html'; // Redirect to login page
+        }
+    </script>
 </body>
 
 </html>
