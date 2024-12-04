@@ -31,22 +31,23 @@
         </div>
     </div>
     <script>
-        // Login validation
         document.getElementById('login-form').addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Mencegah form submit default
+    
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
-            // Dummy validation
+    
+            // Dummy validation untuk login
             if (email === "user@example.com" && password === "password") {
-                // Save login status
+                // Simpan status login di localStorage
                 localStorage.setItem('isLoggedIn', 'true');
-                alert('Login Berhasil!');
-                window.location.href = 'index.html'; 
+                alert('Login berhasil!');
+                window.location.href = 'index.html'; // Redirect ke halaman utama
             } else {
                 alert('Email atau password salah!');
             }
         });
     </script>
+    
 </body>
 </html>
