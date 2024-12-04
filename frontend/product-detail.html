@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redwood</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="bg-main">
+            <div class="mid-header container">
+                <a href="#" class="logo">
+                    <img src="images/redwood.png" alt="Redwood Logo">
+                </a>
+                <div class="header-container">
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="operator.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+
+                    <!-- Logout Button -->
+                    <div class="logout-container">
+                        <a href="loginpage.html">
+                            <button class="btn-flat btn-hover">
+                                <span>Logout</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="bg-second">
+            <div class="bottom-header container">
+                <ul class="main-menu">
+                    <li><a href="index.html">home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="mega-dropdown">
+                        <a href="./products.html">Shop <i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <!-- Content of Mega Menu can go here -->
+                        </div>
+                    </li>
+                    <!-- End Mega Menu -->
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Product Detail Content -->
+    <div class="row product-row">
+        <div class="col-5 col-md-12">
+            <div class="product-img" id="product-img">
+                <img src="./images/baju5.png" alt="Short-Sleeved Embroidered Cotton">
+            </div>
+        </div>
+        <div class="col-7 col-md-12">
+            <div class="product-info">
+                <h1>Short-Sleeved Embroidered Cotton</h1>
+                <div class="product-info-detail">
+                    <span class="product-info-detail-title">Brand:</span>
+                    <a href="#">LV</a>
+                </div>
+                <div class="product-info-detail">
+                    <span class="product-info-detail-title">Rated:</span>
+                    <span class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </span>
+                </div>
+                <p class="product-description">
+                Short-Sleeved Embroidered Cotton dari Louis Vuitton adalah pilihan sempurna bagi mereka yang mencari kombinasi antara gaya klasik dan detail modern. Terbuat dari bahan katun berkualitas tinggi, kaos ini menawarkan kenyamanan sepanjang hari dengan sentuhan yang ringan dan bernapas. Desain lengan pendek menambah kesan kasual, membuatnya ideal untuk cuaca hangat atau pakaian sehari-hari.
+                </p>
+                <div class="product-info-price">15.000.000 IDR</div>
+                <div class="product-quantity-wrapper"></div>
+                <div>
+                    <button class="btn-flat btn-hover">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Products</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Services</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Support</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">redwood</h3>
+                        <ul class="contact-socials">
+                            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- App JS -->
+    <script src="./js/app.js"></script>
+    <script src="./js/product-detail.js"></script>
+
+</body>
+
+</html>

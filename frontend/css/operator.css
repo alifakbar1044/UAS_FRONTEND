@@ -1,0 +1,145 @@
+/* operator.css */
+
+/* Styling untuk header */
+.bg-main {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.mid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-second {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.bottom-header .main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom-header .main-menu li {
+    list-style: none;
+}
+
+.bottom-header .main-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.bottom-header .main-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk form produk */
+form {
+    margin-top: 20px;
+}
+
+form .row {
+    margin-bottom: 15px;
+}
+
+form .col-md-4 input {
+    padding: 10px;
+    font-size: 14px;
+}
+
+form button {
+    font-size: 16px;
+}
+
+/* Styling untuk tabel produk */
+#productTable {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#productTable th,
+#productTable td {
+    text-align: center;
+    padding: 12px;
+}
+
+#productTable th {
+    background-color: #f1f1f1;
+}
+
+#productTable td img {
+    cursor: pointer;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+/* Styling untuk modal gambar besar */
+.modal-lg .modal-dialog {
+    max-width: 80%;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 0;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .mid-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom-header .main-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #productTable {
+        margin-top: 10px;
+    }
+
+    form .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
+/* Styling untuk gambar produk di tabel */
+#productTable td img {
+    cursor: pointer;
+    max-width: 150px; /* Lebih besar dari sebelumnya */
+    max-height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Tambahkan animasi saat hover */
+}
+
+#productTable td img:hover {
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Styling untuk modal gambar besar */
+.modal-body img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px; /* Gambar besar di modal */
+    margin: 0 auto;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redwood</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <!-- top header -->
+    <header>
+        <!-- mid header -->
+        <header>
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo">
+                        <img src="images/redwood.png" alt="Redwood Logo">
+                    </a>
+                    <div class="header-container">
+                        <ul class="user-menu">
+                            <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                            <li><a href="operator.html"><i class='bx bx-user-circle'></i></a></li>
+                            <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                        </ul>
+    
+                        <!-- Logout Button -->
+                        <div class="logout-container">
+                            <a href="loginpage.html">
+                                <button class="btn-flat btn-hover">
+                                    <span>Logout</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <div class="bg-second">
+            <div class="bottom-header container">
+                <ul class="main-menu">
+                    <li><a href="index.html">home</a></li>
+                    <!-- mega menu -->
+                    <li class="mega-dropdown">
+                        <a href="./products.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="img-row">
+
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end bottom header -->
+    </header>
+    <!-- end header -->
+
+    <!-- products content -->
+    
+            </div>
+            <div class="box">
+                <div class="row">
+                    <div class="col-3 filter-col" id="filter-col">
+                        <div class="box filter-toggle-box">
+                            <button class="btn-flat btn-hover" id="filter-close">close</button>
+                        </div>
+                            <!-- Add filter options here -->
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-12">
+                        <div class="box filter-toggle-box">
+                            <button class="btn-flat btn-hover" id="filter-toggle">filter</button>
+                        </div>
+                        <div class="box">
+                            <div class="row" id="products">
+                                <!-- Product items will be displayed here -->
+                            </div>
+                        </div>
+                        <div class="box">
+                            <ul class="pagination">
+                                <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><i class='bx bxs-chevron-right'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end products content -->
+
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+    <script src="./js/products.js"></script>
+    
+</body>
+
+</html>
