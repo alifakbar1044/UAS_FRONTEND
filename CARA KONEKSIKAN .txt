@@ -1,0 +1,4 @@
+psql -U postgres -h 127.0.0.1 -p 5433
+
+\i 'C:/Users/alifa/Downloads/UAS BELUM FIX/UAS BELUM FIX/all_databases_backup.sql'
+
